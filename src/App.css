@@ -36,3 +36,443 @@
     transform: rotate(360deg);
   }
 }
+
+.svgBackground {
+  background-color: #f6f2eb;
+  background-image: url("../public/assets/images/auth-background.svg");
+  background-size: contain; /* Keeps the entire SVG visible */
+  background-repeat: no-repeat; /* Prevents the SVG from repeating */
+  background-position: center; /* Centers the SVG in the container */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
+.login-form {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  width: 30%;
+  min-width: 200px;
+}
+
+.login-form h2 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.login-form p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sign-in-btn {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #fec887; /* Replace with actual color */
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.register-link {
+  text-align: center;
+}
+
+.register-link a {
+  color: #0077cc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.errorBackground {
+  background-color: #f6f2eb;
+  background-image: url("../public/assets/images/error-background.svg");
+  background-size: contain; /* Keeps the entire SVG visible */
+  background-repeat: no-repeat; /* Prevents the SVG from repeating */
+  background-position: center; /* Centers the SVG in the container */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.mainBackground {
+  background-color: #f6f2eb;
+  background-image: url("../public/assets/images/main-background.svg");
+  background-size: cover; /* Scales the SVG to completely cover the area */
+  background-repeat: no-repeat; /* Prevents the SVG from repeating */
+  background-position: center; /* Centers the SVG in the container */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+/* COLD START PAGE */
+.mini-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.header-content {
+  max-width: 60%;
+}
+
+.header-title {
+  font-size: 4rem;
+  color: #333;
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+.header-svg {
+  width: 100%;
+  max-width: 40%;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.book-card {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+.book-card .button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px; /* adjust padding as needed */
+  font-size: 1.5rem; /* adjust icon size as needed */
+  color: #333; /* adjust color as needed */
+}
+
+.book-card .button:hover,
+.book-card .button:focus {
+  color: #4caf50; /* adjust hover color as needed */
+}
+
+.book-image-container {
+  height: 140px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-image {
+  max-height: 100%;
+  width: auto;
+  display: block;
+}
+
+.book-info {
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1; /* Ensures that the info section grows to push the buttons down */
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.book-rating,
+.book-pages {
+  color: #777;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.book-actions {
+  /* background: #f7f7f7; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #e2e2e2;
+}
+
+.button-remove-icon svg {
+  fill: #ffb589; /* This changes the SVG icon color */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent; /* Assuming a transparent navbar */
+  position: absolute;
+  top: 0;
+  left: 0; /* Ensure navbar starts at the left edge */
+  right: 0; /* Ensure navbar ends at the right edge */
+  z-index: 1000; /* High z-index to ensure navbar is above other content */
+  user-select: none;
+  font-size: 1.3rem;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  color: black;
+  flex-shrink: 0; /* Prevent logo from shrinking */
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-pages,
+.nav-actions {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-pages {
+  flex-grow: 1; /* Allows nav-pages to grow and use available space */
+  justify-content: center; /* Center nav-pages items */
+}
+
+.nav-actions {
+  flex-shrink: 0;
+}
+
+.nav-pages li a,
+.nav-actions li a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-pages li a:hover,
+.nav-actions li a:hover {
+  /* Style for selected page */
+  color: #000;
+  text-decoration: none; /* Underline for the selected page */
+  font-weight: 700;
+}
+
+/* Style for action buttons */
+.nav-actions li a.button {
+  border-radius: 20px; /* Rounded corners for buttons */
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+/* Specific style for the sign-up button */
+.nav-actions li a.sign-up {
+  background-color: #000; /* Background color for sign up */
+  color: #fff; /* Text color for sign up */
+}
+
+/* Specific style for the recommend button */
+.nav-actions li a.recommend {
+  background-color: #4caf50; /* Green background color for recommend button */
+  color: #fff; /* Text color for recommend button */
+}
+
+/* Hover effect for buttons */
+.nav-actions li a.button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start on small screens */
+  }
+
+  .nav-pages,
+  .nav-actions {
+    justify-content: center;
+    width: 100%; /* Full width for small screens */
+  }
+}
+
+.feature-section {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 30%; /* Adjust the width as necessary */
+  padding: 2rem;
+  text-align: left;
+  user-select: none;
+}
+
+.feature-section h1 {
+  color: #333;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feature-section p {
+  color: #666;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.feature-section button {
+  background-color: #4caf50; /* Adjust color as needed */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease;
+}
+
+.feature-section button:hover {
+  background-color: #367c39; /* Darker shade on hover */
+}
+
+.user-library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-library {
+  margin-top: 40px;
+}
+
+.user-library h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* YOUR LIBRARY PAGE*/
+.search-books-section {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.search-books-section-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+  font-size: 1.5rem;
+}
+
+.search-books-section-left-similar-reviews {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.search-books-section-title-search {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.search-books-section-right {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 1000px;
+  width: 70%;
+  margin: "auto";
+}
+
+.search-books-section-right-similar-reviews {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1000px;
+  width: 40%;
+  margin: "auto";
+}
+
+.search-books-section-info {
+  text-align: justify;
+}
+
+.search-books-section-button {
+  width: 20%;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  height: 2rem;
+}
+
+.import-from-goodreads-button {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
